@@ -3,7 +3,7 @@ package main
 import "fmt"
 
 func main() {
-	var x [5]float64
+	var x [5]float64 //shorthand for array var x := [5]float64{98, 93, 77, 82, 83,}
 	x[0] = 98
 	x[1] = 93
 	x[2] = 77
