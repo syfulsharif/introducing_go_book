@@ -2,12 +2,17 @@ package main
 
 import "fmt"
 
-//Printing Average of a slice of numbers
-func main() {
-	xs := []float64{98, 93, 77, 82, 83}
+func average(xs []float64) float64 {
 	total := 0.0
 	for _, v := range xs {
 		total += v
 	}
-	fmt.Println(total / float64(len(xs)))
+	return (total / float64(len(xs)))
+}
+
+//Printing Average of a slice of numbers
+func main() {
+	xs := []float64{98, 93, 77, 82, 83}
+
+	fmt.Println(average(xs))
 }
